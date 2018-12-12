@@ -16,3 +16,5 @@ Some wallets will have a directory called "depends".  Go into this directory and
 Newer versions of libssl will cause the compiler to throw errors out about BIG_NUM.  I had to downgrade that package to the libssl found in jessie.  I need to find the exact error message and the resource where I found this information.
 
 I also had to edit the "Makefile.am" to point to the resources built in the "depends" directory rather than trying to use the system's software.
+
+use "./configure --with-incompatible-bdb --with-libressl"
