@@ -14,3 +14,5 @@ It seems that MAKE system does not handle the identification of the ARM processo
 Some wallets will have a directory called "depends".  Go into this directory and issue "make HOST=arm-linux-gnueabihf".  On my system, this wil run for a long time.  I also see a lot of warnings scroll through.
 
 Newer versions of libssl will cause the compiler to throw errors out about BIG_NUM.  I had to downgrade that package to the libssl found in jessie.  I need to find the exact error message and the resource where I found this information.
+
+I also had to edit the Makefile to point to the resources built in the "depends" directory rather than trying to use the system's software.
