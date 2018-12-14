@@ -26,3 +26,5 @@ https://github.com/PIVX-Project/PIVX/blob/master/depends/README.md
 New error message.  Researching it now.
  CXXLD    401kcoind
 ./leveldb/libleveldb.a: error adding symbols: File format not recognized
+
+Here is one possible solution.  I started doing this, but my SSH crashed, so I will have to wait until I get home to try it again.
