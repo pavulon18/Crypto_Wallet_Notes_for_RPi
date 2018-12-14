@@ -22,3 +22,7 @@ I also had to edit the "Makefile.am" to point to the resources built in the "dep
 use "./configure --prefix=`pwd`/depends/arm-linux-gnueabihf"
 https://github.com/PIVX-Project/PIVX/blob/master/depends/README.md
 
+
+New error message.  Researching it now.
+ CXXLD    401kcoind
+./leveldb/libleveldb.a: error adding symbols: File format not recognized
