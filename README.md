@@ -7,7 +7,9 @@ Feel free to submit a pull request if you have any suggestions, error correction
 
 Even if a wallet compiles on the Pi, it may not run on the Pi.  Some wallets were designed for 64bit architectures.  When they are executed on a 32 bit machine, the software will throw a segmentation fault.
 
-If you are running the standard installation of Raspbian on an SD card, you probably won't have much luck getting any of these projects to compile.  I had to move my OS off the SD card and on to an old HDD that I had lying around the house.  Need to find the credit  for this resource
+If you are running the standard installation of Raspbian on an SD card, you probably won't have much luck getting any of these projects to compile.  I had to move my OS off the SD card and on to an old HDD that I had lying around the house.  Need to find the credit  for this resource.
+
+Running "make" for the "depends" took me roughly three hours.
 
 It seems that MAKE system does not handle the identification of the ARM processor exactly right.  Normaly, MAKE will identify the processor and build the software for that processor with no additional intervention.  On the Pi, MAKE will indentify the processor as "armv7l-unknown-linux-gnueabihf".  This will throw up errors saying something to the effect of "armv7l-unknown-linux-gnueabihf cannot be found" after running a short time.  To combat this error, I run this command.  "make HOST=arm-linux-gnueabihf".  The "HOST=" qualifier lets the programmer tell the compiler to build the system for a different architecture.  In our case, this command simply corrects the misidentification of the architecture.  Need to find the source for this resource.
 
