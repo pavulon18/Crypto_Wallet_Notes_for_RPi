@@ -19,7 +19,7 @@ Newer versions of libssl will cause the compiler to throw errors out about BIG_N
 
 I also had to edit the "Makefile.am" to point to the resources built in the "depends" directory rather than trying to use the system's software. (This may not be accurate.  Although I did it for one project, there may be a better way of doing it.)
 
-use "./configure --prefix=`pwd`/depends/arm-linux-gnueabihf"
+use "./configure --prefix=`pwd`/depends/arm-linux-gnueabihf" (there should be backticks around pwd)
 https://github.com/PIVX-Project/PIVX/blob/master/depends/README.md
 
 
